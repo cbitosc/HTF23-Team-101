@@ -18,8 +18,8 @@ const Navbar = () => {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="#" className="">
-              <div class="avatar">
-                <div class="w-16 rounded">
+              <div className="avatar">
+                <div className="w-16 rounded">
                   {/* <img src="" /> */}
                   <h1 className="text-3xl text-white font-bold">Event Manager</h1>
                 </div>
