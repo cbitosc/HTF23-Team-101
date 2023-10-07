@@ -9,7 +9,7 @@ const Carousel = ({ cards }) => {
   const scrollLeft = () => {
     if (cardsContainerRef.current) {
       cardsContainerRef.current.scrollBy({
-        left: -200, 
+        left: -200,
         behavior: 'smooth',
       });
     }
@@ -30,6 +30,7 @@ const Carousel = ({ cards }) => {
       <div className="cards-container" ref={cardsContainerRef}>
         {cards.map((card, index) => (
           <Card 
+          key={index}
           image={card.image}
           title={card.title}
           description={card.description}
