@@ -11,11 +11,15 @@
     padding: 10px; 
     overflow-x: auto; 
     white-space: nowrap;
+    -ms-overflow-style: none;
+  scrollbar-width: none;
   }
 
   .cards-container::-webkit-scrollbar {
     display: none;
   }
+
+
   
   .scroll-button {
     position: absolute;
