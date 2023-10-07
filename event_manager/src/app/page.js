@@ -3,47 +3,11 @@ import React from 'react';
 import Card from '@/components/card'; // Update the component import with a capital 'C' for 'Card'
 import Header from '@/components/header/Header';
 import Carousel from '@/components/carousel';
-
-const cardsData = [
-    {
-        title: 'Card 1',
-        description: 'Description for Card 1',
-        image: 'https://source.unsplash.com/random/800x600',
-    },
-    {
-        title: 'Card 2',
-        description: 'Description for Card 2',
-        image: 'https://source.unsplash.com/random/800x600',
-    },
-    {
-        title: 'Card 3',
-        description: 'Description for Card 3',
-        image: 'https://source.unsplash.com/random/800x600',
-    },
-    {
-        title: 'Card 3',
-        description: 'Description for Card 3',
-        image: 'https://source.unsplash.com/random/800x600',
-    },{
-        title: 'Card 3',
-        description: 'Description for Card 3',
-        image: 'https://source.unsplash.com/random/800x600',
-    },{
-        title: 'Card 3',
-        description: 'Description for Card 3',
-        image: 'https://source.unsplash.com/random/800x600',
-    },{
-        title: 'Card 3',
-        description: 'Description for Card 3',
-        image: 'https://source.unsplash.com/random/800x600',
-    },{
-        title: 'Card 3',
-        description: 'Description for Card 3',
-        image: 'https://source.unsplash.com/random/800x600',
-    },
-];
+import events from "./DB/events.json"
+import clubs from "./DB/clubs.json"
 
 let fname = "Ram";
+
 
 const Home = () => {
 
@@ -58,16 +22,15 @@ const Home = () => {
             </div>
             
             <Carousel
-            cards={cardsData}
+            cards={events}
             />
             <div className='text-[30px] mt-[3.5rem] ml-2'>
                     Clubs :
             </div>
             
             <Carousel
-            cards={cardsData}
+            cards={clubs}
             />
-
             
         </div>
     );
