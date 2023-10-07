@@ -54,7 +54,6 @@ const Home = () => {
                     Welcome {fname},
             </div>
             
-            
             <Carousel
             cards={cardsData}
             />
