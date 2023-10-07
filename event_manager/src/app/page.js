@@ -12,12 +12,12 @@ const cardsData = [
     {
         title: 'Card 2',
         description: 'Description for Card 2',
-        image: '/path/to/card2-image.jpg',
+        image: 'https://source.unsplash.com/random/800x600',
     },
     {
         title: 'Card 3',
         description: 'Description for Card 3',
-        image: '/path/to/card3-image.jpg',
+        image: 'https://source.unsplash.com/random/800x600',
     },
 ];
 
