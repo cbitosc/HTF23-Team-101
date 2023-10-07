@@ -1,16 +1,13 @@
 // components/CircularImage.js
 import React from 'react';
+import './styles/circle.css';
 
 const CircularImage = ({ imageUrl }) => {
-    return (
-        <div className={styles.circularImage}>
-            <img
-                src={imageUrl}
-                alt="Profile"
-                className={styles.image}
-            />
-        </div>
-    );
+  return (
+    <div className="circular-image">
+      <img src={imageUrl} alt="Circular" />
+    </div>
+  );
 };
 
 export default CircularImage;

@@ -5,6 +5,7 @@ import Header from '@/components/header/Header';
 import Carousel from '@/components/carousel';
 import events from "./DB/events.json"
 import clubs from "./DB/clubs.json"
+import CircularImage from '@/components/CircularImage';
 
 let fname = "Ram";
 
@@ -32,6 +33,10 @@ const Home = () => {
             cards={clubs}
             />
             
+<CircularImage imageUrl="https://source.unsplash.com/random/800x600/?art" />;
+
+
+
         </div>
     );
 };
