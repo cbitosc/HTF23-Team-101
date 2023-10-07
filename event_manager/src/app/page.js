@@ -33,9 +33,6 @@ const Home = () => {
             cards={clubs}
             />
             
-<CircularImage imageUrl="https://source.unsplash.com/random/800x600/?art" />;
-
-
 
         </div>
     );
