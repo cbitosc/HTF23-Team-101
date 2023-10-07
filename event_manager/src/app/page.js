@@ -43,15 +43,19 @@ const cardsData = [
     },
 ];
 
+let fname = "Ram";
+
 const Home = () => {
 
     return (
         <div>
             <Header />
-
+            <div className='text-[40px]'>
+                    Welcome {fname},
+            </div>
             
             
-            <Carousel 
+            <Carousel
             cards={cardsData}
             />
         </div>
