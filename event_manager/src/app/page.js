@@ -48,16 +48,7 @@ const Home = () => {
     return (
         <div>
              <Header />
-            <div className="container mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                {cardsData.map((card, index) => (
-                    <Card
-                        key={index}
-                        title={card.title}
-                        description={card.description}
-                        image={card.image}
-                    />
-                ))}
-            </div>
+            
             <Carousel 
             cards={cardsData}
             />
