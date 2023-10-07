@@ -53,10 +53,22 @@ const Home = () => {
             <div className='text-[40px]'>
                     Welcome {fname},
             </div>
+            <div className='text-[30px] mt-[3.5rem] ml-2'>
+                    Upcoming Events
+            </div>
             
             <Carousel
             cards={cardsData}
             />
+            <div className='text-[30px] mt-[3.5rem] ml-2'>
+                    Clubs :
+            </div>
+            
+            <Carousel
+            cards={cardsData}
+            />
+
+            
         </div>
     );
 };
