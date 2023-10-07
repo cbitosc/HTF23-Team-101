@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from 'react';
-import './carousel.css';
+import './styles/carousel.css';
 import Card from './card';
 
 const Carousel = ({ cards }) => {

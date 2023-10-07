@@ -47,7 +47,9 @@ const Home = () => {
 
     return (
         <div>
-             <Header />
+            <Header />
+
+            
             
             <Carousel 
             cards={cardsData}
