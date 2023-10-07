@@ -1,6 +1,5 @@
 // components/CircularImage.js
 import React from 'react';
-import styles from './CircularImage.module.css';
 
 const CircularImage = ({ imageUrl }) => {
     return (
