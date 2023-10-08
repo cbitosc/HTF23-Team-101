@@ -17,11 +17,13 @@ const ClubPage = ({params}) => {
             {/* <img src={image} className="h-52 w-52"/> */}
             <CircularImage imageUrl={image} />
             <h1 className="text-3xl absolute left-[22rem] top-[17rem]">{title.charAt(0).toUpperCase() + title.slice(1,title.length)}</h1>
+            <div className="absolute top-10 left-[27rem]">
             <Editor 
             club={params.club}
             isReadOnly={true}
             text={"This is a sample text"}
             />
+            </div>
             <div className="mt-[3rem]">
                 <h1 className="text-3xl">Upcomming Events</h1>
 
