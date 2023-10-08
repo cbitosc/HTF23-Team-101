@@ -1,4 +1,3 @@
-// components/CircularImage.js
 import React from 'react';
 import './styles/circle.css';
 
