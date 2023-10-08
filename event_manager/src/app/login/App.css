@@ -1,0 +1,27 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  text-align: center;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button {
+  padding: 8px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

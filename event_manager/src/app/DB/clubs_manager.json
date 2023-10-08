@@ -1,0 +1,27 @@
+[
+  {
+    "clubName": "music",
+    "clubHead": "Krishna",
+    "password": "password"
+  },
+  {
+    "clubName": "dance",
+    "clubHead": "Viishnu",
+    "password": "password1"
+
+  },
+  {
+    "clubName": "coding",
+    "clubHead": "Unknown",
+    "password": "welcome"
+  },
+
+    {
+    "clubName": "fashion",
+    "clubHead": "Unknown",
+    "password": "welcome1"
+  }
+
+
+
+]
