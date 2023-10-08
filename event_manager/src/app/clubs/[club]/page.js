@@ -1,15 +1,19 @@
+"use client"
+
 import clubs from "@/app/DB/clubs.json";
 import CircularImage from "@/components/CircularImage";
 import Carousel from "@/components/carousel";
 import events from "@/app/DB/events.json";
 import Navbar from "@/components/header/Navbar";
 import Editor from "@/components/editor";
+import ProtectedRoute from "@/components/ProtectedRoute";
 
 const ClubPage = ({params}) => {
     let image = clubs.find((club) => (club.title == params.club)).image;
     let title = params.club;
 
     return (
+        <ProtectedRoute>
         <div>
             <Navbar/>
         
@@ -32,6 +36,7 @@ const ClubPage = ({params}) => {
 
         </div>
         </div>
+        </ProtectedRoute>
     )
 }
 

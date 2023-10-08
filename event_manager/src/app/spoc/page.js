@@ -8,9 +8,12 @@ import RoundedImage from "@/components/RoundedImage";
 import Link from 'next/link'; 
 import clubsData from "@/app/DB/clubs_manager.json";
 import ClubInfo from "@/components/clubInfo";
+import ProtectedRoute from "@/components/ProtectedRoute";
 
 const spoc = () => {
+   
     return (
+        <ProtectedRoute>
         <div>
             <Navbar/>
             <div>
@@ -52,7 +55,9 @@ const spoc = () => {
       </Link>
       </div>
         </div>
+        </ProtectedRoute>
     )
+    
 }
 
 export default spoc;

@@ -1,7 +1,8 @@
 [
     {
       "username": "user1",
-      "password": "password1"
+      "password": "password1",
+      "special": "True"
     },
     {
       "username": "user2",
