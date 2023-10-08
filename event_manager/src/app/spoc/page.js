@@ -7,7 +7,7 @@ import Navbar from "@/components/header/Navbar";
 import RoundedImage from "@/components/RoundedImage";
 import Link from 'next/link'; 
 import clubsData from "@/app/DB/clubs_manager.json";
-import ClubInfo from "@/components/ClubInfo";
+import ClubInfo from "@/components/clubInfo";
 
 const spoc = () => {
     return (
