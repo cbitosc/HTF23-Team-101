@@ -14,6 +14,7 @@ const ProtectedRoute = ({ children }) => {
         // You can implement your authentication logic in the authenticateUser function
         let username = Cookies.get('username');
         let password = Cookies.get('password');
+        console.log(username, password,"helllllo")
         const isAuthenticated = await authenticateUser(true, username, password);
 
         if (!isAuthenticated) {

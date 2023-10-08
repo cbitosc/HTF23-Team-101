@@ -35,8 +35,6 @@ function Login() {
         Cookies.set('username', username, { expires: 7, path: '/' });
         Cookies.set('password', password, { expires: 7, path: '/' });
       }
-      
-
   }
 }
 

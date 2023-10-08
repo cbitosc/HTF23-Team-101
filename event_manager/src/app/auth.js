@@ -10,7 +10,7 @@ export const authenticateUser = async ( isSpoc,username, password) => {
   } else {
     userData = students
   }
-  
-  const user = usersData.find((u) => u.username === username && u.password === password);
+
+  const user = userData.find((u) => u.username === username && u.password === password);
   return user;
 };
