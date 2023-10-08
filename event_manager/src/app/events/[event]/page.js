@@ -7,7 +7,8 @@ import RoundedImage from "@/components/RoundedImage";
 
 const ClubPage = ({params}) => {
     const eventTitle = params.event.replace(/%20/g, ' ');
-    let image = events.find((event) => (events.title == params.events)).image;
+    let event = events.find((event) => (event.title == eventTitle))
+    let image = event.image;
 
     return (
         <div>
