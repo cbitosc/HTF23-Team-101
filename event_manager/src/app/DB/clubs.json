@@ -1,18 +1,22 @@
 [
     {
       "title": "music",
-      "image": "https://source.unsplash.com/random/800x600/?music"
+      "image": "https://source.unsplash.com/random/800x600/?music",
+      "url":"/club/mucis"
     },
     {
       "title": "dance",
-      "image": "https://source.unsplash.com/random/800x600/?dance"
+      "image": "https://source.unsplash.com/random/800x600/?dance",
+      "url":"/club/dance"
     },
     {
       "title": "coding",
-      "image": "https://source.unsplash.com/random/800x600/?coding"
+      "image": "https://source.unsplash.com/random/800x600/?coding",
+      "url":"/club/coding"
     },
     {
       "title": "fashion",
-      "image": "https://source.unsplash.com/random/800x600/?fashion"
+      "image": "https://source.unsplash.com/random/800x600/?fashion",
+      "url":"/club/fashion"
     }
 ]
