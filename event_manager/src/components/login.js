@@ -5,8 +5,10 @@ import {useRef} from 'react';
 import MyToggle from '@/app/login/switch';
 import Cookies from 'js-cookie';
 import { authenticateUser } from '@/app/auth';
+import { useRouter } from 'next/navigation';
 
 function Login() {
+  let router = useRouter();
   let [username, setUsername] = useState('');
   let [password, setPassword] = useState('');
   let [check, setcheck] = useState(false);
@@ -30,6 +32,8 @@ function Login() {
       if(check){
         Cookies.set('username', username, { expires: 7, path: path });
         Cookies.set('password', password, { expires: 7, path: path });
+        console.log(Cookies.get('username'), Cookies.get('password'));
+        router.push(path);
       }
       else {
         Cookies.set('username', username, { expires: 7, path: '/' });
@@ -74,7 +78,7 @@ function Login() {
           <a className="text-blue-600 hover:text-blue-700 hover:underline hover:underline-offset-4" href="#">Forgot Password?</a>
         </div>
         <div className="text-center md:text-left">
-          <button className="mt-4 bg-blue-600 hover:bg-blue-700 px-4 py-2 text-white uppercase rounded text-xs tracking-wider" type="submit">Login</button>
+          <button onClick={handleSubmit} className="mt-4 bg-blue-600 hover:bg-blue-700 px-4 py-2 text-white uppercase rounded text-xs tracking-wider" type="submit">Login</button>
         </div>
         <div className="mt-4 font-semibold text-sm text-slate-500 text-center md:text-left">
           Don't have an account? <a className="text-red-600 hover:underline hover:underline-offset-4" href="#">Register</a>

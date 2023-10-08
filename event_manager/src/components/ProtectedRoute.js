@@ -4,7 +4,7 @@ import { authenticateUser } from '@/app/auth';// Import your authentication modu
 import { useRouter } from 'next/navigation';
 import Cookies from 'js-cookie';
 
-const ProtectedRoute = ({ children }) => {
+const ProtectedRoute = ({  isSpoc ,username, password,children }) => {
   const router = useRouter();
 
   useEffect(() => {
@@ -12,10 +12,9 @@ const ProtectedRoute = ({ children }) => {
       try {
         // Check if the user is authenticated (e.g., by verifying a token or session)
         // You can implement your authentication logic in the authenticateUser function
-        let username = Cookies.get('username');
-        let password = Cookies.get('password');
-        console.log(username, password,"helllllo")
-        const isAuthenticated = await authenticateUser(true, username, password);
+        console.log(username, password);
+        // console.log(username, password,"helllllo")
+        const isAuthenticated = await authenticateUser(isSpoc, username, password);
 
         if (!isAuthenticated) {
           // If the user is not authenticated, redirect to the login page

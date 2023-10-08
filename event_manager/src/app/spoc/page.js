@@ -9,11 +9,17 @@ import Link from 'next/link';
 import clubsData from "@/app/DB/clubs_manager.json";
 import ClubInfo from "@/components/ClubInfo";
 import ProtectedRoute from "@/components/ProtectedRoute";
+import Cookies from 'js-cookie';
+
 
 const spoc = () => {
    
     return (
-        <ProtectedRoute>
+        // <ProtectedRoute
+        // isSpoc={true}
+        // password={Cookies.get('password')}
+        // username={Cookies.get('username')}
+        // >
         <div>
             <Navbar/>
             <div>
@@ -55,7 +61,7 @@ const spoc = () => {
       </Link>
       </div>
         </div>
-        </ProtectedRoute>
+        // </ProtectedRoute>
     )
     
 }
