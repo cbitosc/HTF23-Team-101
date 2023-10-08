@@ -4,6 +4,7 @@ import {useState} from 'react';
 import {useRef} from 'react';
 import MyToggle from '@/app/login/switch';
 import Cookies from 'js-cookie';
+import { authenticateUser } from '@/app/auth';
 
 function Login() {
   let [username, setUsername] = useState('');
@@ -14,19 +15,30 @@ function Login() {
     setUsername(e.target.value);
   }
   let handlePassword = (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     setPassword(e.target.value);
-    console.log(checkRef.current.value);
+    // console.log(checkRef.current.checked);
   }
   let handleCheck = (e) => {
-    console.log(e.target.value);
-    setcheck(e.target.value);
+    setcheck(e.target.checked);
 
   }
 
   let handleSubmit = (e) => {
-    Cookies.set('username', username, { expires: 7, path: '/' })
+    if(authenticateUser(check, username, password)){
+      let path = check ? '/spoc' : '/clubs';
+      if(check){
+        Cookies.set('username', username, { expires: 7, path: path });
+        Cookies.set('password', password, { expires: 7, path: path });
+      }
+      else {
+        Cookies.set('username', username, { expires: 7, path: '/' });
+        Cookies.set('password', password, { expires: 7, path: '/' });
+      }
+      
+
   }
+}
 
     Cookies.set('name', 'value', { expires: 7, path: '/' })
     return (
@@ -74,4 +86,4 @@ function Login() {
     );
 }
 
-export default Login
+export default Login;
