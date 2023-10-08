@@ -3,13 +3,13 @@
         "title": "Annual Art Exhibition",
         "description": "Our prestigious annual art exhibition showcasing the talents of our students and faculty.",
         "image": "https://source.unsplash.com/random/800x600/?art",
-        "url":"/event/AnnualArtExhibition"
+        "url":"/events/AnnualArtExhibition"
     },
     {
         "title": "Spring Music Festival",
         "description": "Join us for a night of enchanting melodies and live performances by renowned musicians.",
         "image": "https://source.unsplash.com/random/800x600/?music",
-        "url":"/event/SpringMusicFestival"
+        "url":"/events/SpringMusicFestival"
     },
     {
         "title": "Science and Technology Symposium",
