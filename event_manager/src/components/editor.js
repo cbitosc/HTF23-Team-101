@@ -1,9 +1,13 @@
 import React from "react";
 import "./styles/Editor.css";
 
-const Editor = () => {
+const Editor = ({isReadOnly, placeholder, text}) => {
     return (
-        <textarea className="editor" id="editor" name="editor" row="5" cols="5">
+        <textarea className="editor" id="editor" name="editor" row="5" cols="5"
+        placeholder={placeholder}
+        readOnly={isReadOnly}
+        >
+            {text}
         </textarea>
     )
 }
