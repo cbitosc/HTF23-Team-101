@@ -15,18 +15,18 @@
         "title": "Science and Technology Symposium",
         "description": "A symposium featuring talks and workshops by leading experts in the fields of science and technology.",
         "image": "https://source.unsplash.com/random/800x600/?science",
-        "url":"/event/ScienceandTechnologySymposium"
+        "url":"/events/ScienceandTechnologySymposium"
     },
     {
         "title": "Cultural Diversity Day",
         "description": "Celebrate the rich tapestry of cultures at our collage with traditional food, dance, and exhibits.",
         "image": "https://source.unsplash.com/random/800x600/?culture",
-        "url":"/event/CultureDiversityCelebrationDay"
+        "url":"/events/CultureDiversityCelebrationDay"
     },
     {
         "title": "Intercollegiate Sports Meet",
         "description": "Compete with colleges from across the region in a thrilling sports meet filled with energy and camaraderie.",
         "image": "https://source.unsplash.com/random/800x600/?sports",
-        "url":"/event/IntercollegiateSportsMeet"
+        "url":"/events/IntercollegiateSportsMeet"
     }
 ]
