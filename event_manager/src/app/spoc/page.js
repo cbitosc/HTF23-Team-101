@@ -5,6 +5,8 @@ import events from "@/app/DB/events.json";
 import Navbar from "@/components/header/Navbar";
 import RoundedImage from "@/components/RoundedImage";
 import Link from 'next/link'; 
+import clubsData from "@/app/DB/clubs_manager.json";
+import ClubInfo from "@/components/clubInfo";
 
 const spoc = () => {
     return (
@@ -14,7 +16,27 @@ const spoc = () => {
                 <h1 className="text-3xl mt-5 mb-7">Current CLubs</h1>
             <Carousel cards={clubs}/>
             </div>
-        <div className="mt-10 ml-4">
+        
+      <div className="mt-10 ml-9">
+      <table>
+        <thead>
+          <tr>
+            <th className="text-xl">Club Name</th>
+            <th className="ml-3 text-xl">Club Head</th>
+          </tr>
+        </thead>
+        <tbody>
+          {clubsData.map((club, index) => (
+            <ClubInfo
+              key={index}
+              clubName={club.clubName}
+              clubHead={club.clubHead}
+            />
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <div className="mt-10 ml-9">
             <Link href="/edit"> {/* Link to the club management page */}
             <a class="rounded-lg  relative w-36 h-10 cursor-pointer flex items-center border border-green-500 bg-green-500 group hover:bg-green-500 active:bg-green-500 active:border-green-500" href="{{ route('process.create') }}">
   <span class="text-gray-200 font-semibold ml-8 transform group-hover:translate-x-20 transition-all duration-300 group-hover:hidden">Add Item</span>
