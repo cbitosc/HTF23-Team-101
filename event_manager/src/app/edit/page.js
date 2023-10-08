@@ -1,5 +1,5 @@
 import Link from 'next/link'; // Import Link from Next.js
-
+import Navbar from '@/components/header/Navbar';
 const EditPage = () => {
   // Implement your club management functionality here
 
@@ -11,7 +11,7 @@ const EditPage = () => {
 
         {/* Add Club Button */}
         <Link href="/edit/add"> {/* Link to a page for adding clubs */}
-          <a className="text-blue-500 underline">Add Club</a>
+          <button className="text-blue-500 underline">Add Club</button>
         </Link>
         
         {/* Display and manage clubs */}
