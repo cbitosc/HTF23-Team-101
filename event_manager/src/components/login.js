@@ -15,8 +15,8 @@ function Login() {
           <p className="mx-4 mb-0 text-center font-semibold text-slate-500">SIGN IN</p>
         </div>
         <MyToggle/>
-        <input className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded" type="text" placeholder="Username" />
-        <input className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded mt-4" type="password" placeholder="Password" />
+        <input className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded" type="text" placeholder="Username" style={{color: "black"}}/>
+        <input className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded mt-4" type="password" placeholder="Password" style={{color: "black"}}/>
         <div className="mt-4 flex justify-between font-semibold text-sm">
           <a className="text-blue-600 hover:text-blue-700 hover:underline hover:underline-offset-4" href="#">Forgot Password?</a>
         </div>
