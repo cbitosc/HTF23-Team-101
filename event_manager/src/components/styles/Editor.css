@@ -1,0 +1,15 @@
+.editor {
+    background-color: rgb(229, 227, 227);
+    height: 300px;
+    width: 600px;
+    margin: 100px;
+    border: 1.5px solid grey;
+    border-radius: 5px;
+    padding: 7px;
+    color: black;
+    display: inline;
+}
+
+.editor:focus {
+    outline: none ;
+}

@@ -1,0 +1,22 @@
+[
+    {
+      "title": "music",
+      "image": "https://source.unsplash.com/random/800x600/?music",
+      "url":"/clubs/music"
+    },
+    {
+      "title": "dance",
+      "image": "https://source.unsplash.com/random/800x600/?dance",
+      "url":"/clubs/dance"
+    },
+    {
+      "title": "coding",
+      "image": "https://source.unsplash.com/random/800x600/?coding",
+      "url":"/clubs/coding"
+    },
+    {
+      "title": "fashion",
+      "image": "https://source.unsplash.com/random/800x600/?fashion",
+      "url":"/clubs/fashion"
+    }
+]

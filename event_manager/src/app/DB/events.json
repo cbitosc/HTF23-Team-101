@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Annual Art Exhibition",
+        "description": "Our prestigious annual art exhibition showcasing the talents of our students and faculty.",
+        "image": "https://source.unsplash.com/random/800x600/?art",
+        "url":"/events/Annual Art Exhibition"
+    },
+    {
+        "title": "Spring Music Festival",
+        "description": "Join us for a night of enchanting melodies and live performances by renowned musicians.",
+        "image": "https://source.unsplash.com/random/800x600/?music",
+        "url":"/events/Spring Music Festival"
+    },
+    {
+        "title": "Science and Technology Symposium",
+        "description": "A symposium featuring talks and workshops by leading experts in the fields of science and technology.",
+        "image": "https://source.unsplash.com/random/800x600/?science",
+        "url":"/events/Science and Technology Symposium"
+    },
+    {
+        "title": "Cultural Diversity Day",
+        "description": "Celebrate the rich tapestry of cultures at our collage with traditional food, dance, and exhibits.",
+        "image": "https://source.unsplash.com/random/800x600/?culture",
+        "url":"/events/Cultural Diversity Day"
+    },
+    {
+        "title": "Intercollegiate Sports Meet",
+        "description": "Compete with colleges from across the region in a thrilling sports meet filled with energy and camaraderie.",
+        "image": "https://source.unsplash.com/random/800x600/?sports",
+        "url":"/events/Intercollegiate Sports Meet"
+    }
+]
